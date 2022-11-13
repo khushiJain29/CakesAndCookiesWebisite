@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body class="login-body">
+    <div class="bg-container">
+      <img src="cake3.png" class="bg-img">
+      <div class="container">
+        <h1>LOG IN</h1>
+        <form id="login-form" action="" method="post">
+          <div class="tbox">
+            <input type="text" name="" value="" id="uname" placeholder="Username">
+          </div>
+          <div class="tbox">
+            <input type="password" name="" value="" id="pwd" placeholder="Password">
+          </div>
+          <input type="submit" name="" value="LOGIN" class="btn" onclick="validateLogin()">
+        </form>
+        <a href="#" class="b1">FORGET PASSWORD</a>
+        <a href="#" class="b2">CREATE AN ACCOUNT</a>
+      </div>
+      <div class="model">
+        <div class="model-header">
+          <img src="alert.png" alt="" height="100px" width="100px">
+        </div>
+        <p>Incorrect username or password</p>
+        <button type="button" name="button" class="btn" onclick="dismissModal()">TRY AGAIN</button>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

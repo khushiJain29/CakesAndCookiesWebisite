@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scaleble=no">
+    <meta http-equiv="X-UA-Compatible" content="true">
+    <title>Cakes and Cookies</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="nav-wrapper">
+        <nav>
+          <ul class="nav-list">
+            <img src="logo.png" alt="" id="icon">
+            <li class="nav-item"><a href="account.html">Account</a></li>
+            <li><a href="login.html">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="employees">
+        <h2>Employees</h2>
+          <div class="employees-list">
+            <li>
+              <div class="employee-card" id="employee1">
+                <img class="user-img" src="ity.jpg" alt="" height="200" width="200">
+                <span>
+                  <div class="employee-details" id="employee1-details">
+                    <span class="name-format">Divanshi</span>
+                    <span class="name-format">Jain</span>
+                    <br>
+                    <span>Baker & owner</span>
+                    <br>
+                    <span>divanshi@homemade.com</span>
+                    <br>
+                    <span>Rs.5000</span>
+                  </div>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="employee-card" id="employee2">
+                <img class="user-img" src="richa.jpg" alt="" height="200" width="200">
+                <span>
+                  <div class="employee-details" id="employee2-details">
+                    <span class="name-format">Richa</span>
+                    <span class="name-format">Jain</span>
+                    <br>
+                    <span>Decorator & owner</span>
+                    <br>
+                    <span>richa@homemade.com</span>
+                    <br>
+                    <span>Rs.5000</span>
+                  </div>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="employee-card" id="employee2">
+                <img class="user-img" src="mani.png" alt="" height="200" width="200">
+                <span>
+                  <div class="employee-details" id="employee2-details">
+                    <span class="name-format">Mani</span>
+                    <span class="name-format">Jain</span>
+                    <br>
+                    <span>Photographer</span>
+                    <br>
+                    <span>mani@homemade.com</span>
+                    <br>
+                    <span>Rs.1000</span>
+                  </div>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="employee-card" id="employee1">
+                <img class="user-img" src="shruti.jpg" alt="" height="200" width="200">
+                <span>
+                  <div class="employee-details" id="employee1-details">
+                    <span class="name-format">Shruti</span>
+                    <span class="name-format">Jain</span>
+                    <br>
+                    <span>Critics</span>
+                    <br>
+                    <span>shruti@homemade.com</span>
+                    <br>
+                    <span>Rs.500</span>
+                  </div>
+                </span>
+              </div>
+            </li>
+          </div>
+      </div>
+      <div class="interviews">
+        <h2>Upcoming Interviews</h2>
+        <li>
+          <div class="list-item">
+            <h3>Marketing</h3>
+            <p>Social Media Content Specialist</p>
+            <button type="button" name="button" class="accept-btn">Accept</button>
+            <button type="button" name="button" class="reject-btn">Reject</button>
+          </div>
+        </li>
+        <li>
+          <div class="list-item">
+            <h3>Driver</h3>
+            <p>Advanced driver</p>
+            <button type="button" name="button" class="accept-btn">Accept</button>
+            <button type="button" name="button" class="reject-btn">Reject</button>
+          </div>
+        </li>
+        <li>
+          <div class="list-item">
+            <h3>Software Developer</h3>
+            <p>Full-stack Developer</p>
+            <button type="button" name="button" class="accept-btn">Accept</button>
+            <button type="button" name="button" class="reject-btn">Reject</button>
+          </div>
+        </li>
+      </div>
+      <div class="modal" id="employeeModal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <div class="modal-header-content">
+              <span>Add Employee</span>
+              <button type="button" name="button" class="close" onclick="dismissAddEmployeeModal()">X</button>
+            </div>
+          </header>
+          <div class="modal-container">
+            <label for="fname">First Name</label>
+            <input type="text" id="name" name="" value="">
+            <br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="surname" name="" value="">
+            <br>
+            <label for="position">Position</label>
+            <input type="text" id="position" name="" value="">
+            <br>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="" value="">
+            <br>
+            <label for="salary">Salary</label>
+            <input type="text" id="salary" name="" value="">
+            <br>
+            <button type="button" name="button" id="confirmBtn" onclick="addEmployee()">Confirm</button>
+          </div>
+          <footer class="modal-footer"></footer>
+        </div>
+      </div>
+      <div class="modal" id="interviewModal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <div class="modal-header-content">
+              <span>Add Interview</span>
+              <button type="button" name="button" class="close" onclick="dismissAddInterviewModal()">X</button>
+            </div>
+          </header>
+          <div class="modal-container">
+            <label for="fname">Department</label>
+            <input type="text" id="int-department" name="" value="">
+            <br>
+            <label for="fname">Position</label>
+            <input type="text" id="int-position" name="" value="">
+            <br>
+            <button type="button" id="confirmIntBtn" name="button" onclick="addInterview()">Confirm</button>
+          </div>
+          <footer class="modal-footer"></footer>
+        </div>
+      </div>
+      <button type="button" name="button" class="btn" onclick="showAddIntModal()">Add Interview</button>
+      <button type="button" name="button" class="btn" onclick="showAddEmpModal()">Add Employee</button>
+      <script type="text/javascript" src="main2.js">
+      </script>
+  </body>
+</html>
